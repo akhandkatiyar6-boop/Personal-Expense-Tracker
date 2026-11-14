@@ -1,0 +1,71 @@
+/* ==============================================
+   Personal Expense Tracker - style.css
+   Clean, simple, professional styling on top of Bootstrap 5
+   ============================================== */
+
+body {
+  background-color: #f8fafc;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: #1e293b;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Cards & Panels */
+.card {
+  border-radius: 0.75rem;
+  transition: box-shadow 0.2s ease;
+}
+
+/* Table Usability & Mobile Responsiveness */
+.table th {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #64748b;
+  white-space: nowrap;
+}
+
+.table td {
+  font-size: 0.925rem;
+  vertical-align: middle;
+}
+
+/* Ensure numerical and action columns don't wrap awkwardly on smaller mobile screens */
+.amount-cell,
+.date-cell,
+.action-cell,
+.category-cell {
+  white-space: nowrap;
+}
+
+.amount-cell {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+/* Category Badges */
+.category-badge {
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+/* Action button micro-interaction */
+.btn-delete {
+  transition: all 0.15s ease-in-out;
+}
+
+.btn-delete:hover {
+  transform: translateY(-1px);
+}
+
+/* Empty State */
+.empty-state {
+  display: none;
+}
